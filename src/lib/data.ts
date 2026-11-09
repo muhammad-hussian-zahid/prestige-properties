@@ -1,0 +1,51 @@
+import { Property, Agent, Testimonial } from './types';
+
+export const properties: Property[] = [
+  { id: 1, slug: 'modern-villa-dubai', title: 'Modern Luxury Villa with Pool', price: 2500000, currency: 'USD', location: 'Palm Jumeirah, Dubai', city: 'Dubai', description: 'Stunning modern villa with panoramic sea views, private infinity pool, and smart home technology throughout. Floor-to-ceiling windows flood the space with natural light.', type: 'Villa', listingType: 'Buy', status: 'For Sale', bedrooms: 5, bathrooms: 6, sqft: 8500, amenities: ['Pool', 'Gym', 'Parking', 'Security', 'Garden', 'Elevator'], images: ['https://images.unsplash.com/photo-1600596542815-5567b28e9c3c?w=800', 'https://images.unsplash.com/photo-1600585154340-4e843d5c0f9c?w=800', 'https://images.unsplash.com/photo-1600571840248-9c9a5f5f0f5b?w=800'], featured: true, agentId: 1 },
+  { id: 2, slug: 'luxury-apartment-ikoyi', title: 'Luxury Penthouse in Ikoyi', price: 850000, currency: 'USD', location: 'Ikoyi, Lagos', city: 'Lagos', description: 'Exclusive penthouse in the heart of Ikoyi with breathtaking lagoon views. Open-plan living with premium finishes and 24-hour concierge service.', type: 'Apartment', listingType: 'Buy', status: 'For Sale', bedrooms: 4, bathrooms: 4, sqft: 3200, amenities: ['Pool', 'Parking', 'Security', 'Gym', 'Elevator'], images: ['https://images.unsplash.com/photo-1600607687939-7e6e5b2b3c3a?w=800', 'https://images.unsplash.com/photo-1600585152915-5b7e9c9c9c9c?w=800', 'https://images.unsplash.com/photo-1600585152915-6b7e9c9c9c9c?w=800'], featured: true, agentId: 2 },
+  { id: 3, slug: 'beachfront-villa-lagos', title: 'Beachfront Villa with Lagoon View', price: 1800000, currency: 'USD', location: 'Lekki Phase 1, Lagos', city: 'Lagos', description: 'Magnificent beachfront villa with direct lagoon access. Private dock, tropical gardens, and resort-style living at its finest.', type: 'Villa', listingType: 'Buy', status: 'For Sale', bedrooms: 6, bathrooms: 7, sqft: 7200, amenities: ['Pool', 'Garden', 'Parking', 'Security', 'Gym'], images: ['https://images.unsplash.com/photo-1600585154340-4e843d5c0f9c?w=800', 'https://images.unsplash.com/photo-1600596542815-5567b28e9c3c?w=800', 'https://images.unsplash.com/photo-1600585152915-5b7e9c9c9c9c?w=800'], featured: true, agentId: 1 },
+  { id: 4, slug: 'modern-abuja-villa', title: 'Contemporary Villa in Asokoro', price: 1200000, currency: 'USD', location: 'Asokoro, Abuja', city: 'Abuja', description: 'Elegant contemporary villa in Abuja\'s most prestigious neighborhood. Smart home features, landscaped gardens, and unparalleled privacy.', type: 'Villa', listingType: 'Buy', status: 'For Sale', bedrooms: 5, bathrooms: 5, sqft: 6200, amenities: ['Pool', 'Garden', 'Parking', 'Security', 'Gym', 'Elevator'], images: ['https://images.unsplash.com/photo-1600571840248-9c9a5f5f0f5b?w=800', 'https://images.unsplash.com/photo-1600585154340-4e843d5c0f9c?w=800', 'https://images.unsplash.com/photo-1600596542815-5567b28e9c3c?w=800'], featured: true, agentId: 3 },
+  { id: 5, slug: 'london-mayfair-apartment', title: 'Mayfair Luxury Apartment', price: 3200000, currency: 'GBP', location: 'Mayfair, London', city: 'London', description: 'Exceptional apartment in the heart of Mayfair. Period features meet modern luxury with a private balcony overlooking a garden square.', type: 'Apartment', listingType: 'Buy', status: 'For Sale', bedrooms: 3, bathrooms: 3, sqft: 2400, amenities: ['Parking', 'Security', 'Gym', 'Elevator'], images: ['https://images.unsplash.com/photo-1600596542815-5567b28e9c3c?w=800', 'https://images.unsplash.com/photo-1600585154340-4e843d5c0f9c?w=800', 'https://images.unsplash.com/photo-1600571840248-9c9a5f5f0f5b?w=800'], featured: true, agentId: 2 },
+  { id: 6, slug: 'commercial-tower-abuja', title: 'Commercial Tower Central Abuja', price: 5000000, currency: 'USD', location: 'Central Business District, Abuja', city: 'Abuja', description: 'Prime commercial tower in Abuja\'s CBD. 20 floors of premium office space with retail podiums, parking, and conference facilities.', type: 'Commercial', listingType: 'Rent', status: 'For Rent', bedrooms: 0, bathrooms: 10, sqft: 45000, amenities: ['Parking', 'Security', 'Elevator', 'Gym'], images: ['https://images.unsplash.com/photo-1487958442005-5b7e9c9c9c9c?w=800', 'https://images.unsplash.com/photo-1487958442005-6b7e9c9c9c9c?w=800', 'https://images.unsplash.com/photo-1487958442005-7b7e9c9c9c9c?w=800'], featured: false, agentId: 3 },
+  { id: 7, slug: 'shortlet-victoria-island', title: 'Luxury Shortlet — Victoria Island', price: 1500, currency: 'USD', location: 'Victoria Island, Lagos', city: 'Lagos', description: 'Premium short-let apartment on Victoria Island. Fully furnished with hotel-grade amenities, perfect for executives and diplomats.', type: 'Apartment', listingType: 'Shortlet', status: 'For Rent', bedrooms: 3, bathrooms: 3, sqft: 1800, amenities: ['Pool', 'Gym', 'Parking', 'Security', 'Garden'], images: ['https://images.unsplash.com/photo-1600585152915-5b7e9c9c9c9c?w=800', 'https://images.unsplash.com/photo-1600585154340-4e843d5c0f9c?w=800', 'https://images.unsplash.com/photo-1600596542815-5567b28e9c3c?w=800'], featured: false, agentId: 1 },
+  { id: 8, slug: 'land-eko-atlantic', title: 'Prime Development Land — Eko Atlantic', price: 3000000, currency: 'USD', location: 'Eko Atlantic, Lagos', city: 'Lagos', description: 'Rare opportunity to acquire prime development land in the Eko Atlantic city. Approved for mixed-use development with ocean views.', type: 'Land', listingType: 'Buy', status: 'For Sale', bedrooms: 0, bathrooms: 0, sqft: 25000, amenities: ['Security'], images: ['https://images.unsplash.com/photo-1506905925346-5b7e9c9c9c9c?w=800', 'https://images.unsplash.com/photo-1506905925346-6b7e9c9c9c9c?w=800', 'https://images.unsplash.com/photo-1506905925346-7b7e9c9c9c9c?w=800'], featured: false, agentId: 3 },
+];
+
+export const agents: Agent[] = [
+  { id: 1, slug: 'sarah-oyelowo', name: 'Sarah Oyelowo', title: 'Luxury Property Specialist', photo: 'https://images.unsplash.com/photo-1507003211234-5b7e9c9c9c9c?w=400', bio: 'With over 15 years in luxury real estate, Sarah has closed over $200M in transactions across Lagos and Dubai. Her deep market knowledge and extensive network make her one of the most sought-after agents in Africa.', phone: '+234 802 345 6789', email: 'sarah@prestige.com', specialization: 'Luxury Villas & Penthouses', languages: ['English', 'Yoruba'], rating: 4.9, reviews: [{ name: 'Mr. Adekunle', text: 'Sarah found us our dream home in Ikoyi. Exceptional service.' }, { name: 'Dr. Eze', text: 'Professional, responsive, and truly understands the luxury market.' }], propertiesCount: 4 },
+  { id: 2, slug: 'james-okoro', name: 'James Okoro', title: 'International Real Estate Advisor', photo: 'https://images.unsplash.com/photo-1507003211234-6b7e9c9c9c9c?w=400', bio: 'James specializes in helping clients acquire premium properties in London, Dubai, and Nigeria\'s top locations. His international perspective and cross-border expertise deliver seamless transactions.', phone: '+234 809 876 5432', email: 'james@prestige.com', specialization: 'International & Commercial', languages: ['English', 'Igbo', 'French'], rating: 4.8, reviews: [{ name: 'Chief Okonkwo', text: 'James handled our London acquisition flawlessly.' }, { name: 'Mrs. Williams', text: 'Incredible attention to detail and cross-border expertise.' }], propertiesCount: 3 },
+  { id: 3, slug: 'amina-hassan', name: 'Amina Hassan', title: 'Property Investment Consultant', photo: 'https://images.unsplash.com/photo-1507003211234-7b7e9c9c9c9c?w=400', bio: 'Amina brings a decade of experience in Abuja and Lagos real estate markets. She is known for finding high-yield investment opportunities and guiding first-time buyers with patience and expertise.', phone: '+234 805 555 1212', email: 'amina@prestige.com', specialization: 'Residential & Investment', languages: ['English', 'Hausa'], rating: 4.7, reviews: [{ name: 'Alhaji Bello', text: 'Amina helped me build my property portfolio from scratch.' }, { name: 'Ms. Okafor', text: 'Honest, hardworking, and incredibly knowledgeable.' }], propertiesCount: 5 },
+];
+
+export const testimonials: Testimonial[] = [
+  { name: 'Mr. & Mrs. Adekunle', photo: 'https://images.unsplash.com/photo-1529622571-5b7e9c9c9c9c?w=100', text: 'Prestige Properties made our dream of owning a home in Ikoyi a reality. Their team was with us every step of the way.', propertyType: 'Villa in Lagos' },
+  { name: 'Dr. Chidi Eze', photo: 'https://images.unsplash.com/photo-1529622571-6b7e9c9c9c9c?w=100', text: 'Exceptional service from start to finish. They found the perfect penthouse and negotiated a fantastic deal.', propertyType: 'Penthouse in Abuja' },
+  { name: 'Chief Okonkwo', photo: 'https://images.unsplash.com/photo-1529622571-7b7e9c9c9c9c?w=100', text: 'When we needed a London property, Prestige made it seamless. Their international team is world-class.', propertyType: 'Apartment in London' },
+  { name: 'Mrs. Grace Williams', photo: 'https://images.unsplash.com/photo-1529622571-8b7e9c9c9c9c?w=100', text: 'The attention to detail and market knowledge at Prestige is unmatched. Highly recommended for luxury properties.', propertyType: 'Villa in Dubai' },
+];
+
+export function getPropertyBySlug(slug: string): Property | undefined {
+  return properties.find((p) => p.slug === slug);
+}
+
+export function getAgentBySlug(slug: string): Agent | undefined {
+  return agents.find((a) => a.slug === slug);
+}
+
+export function getPropertiesByAgentId(agentId: number): Property[] {
+  return properties.filter((p) => p.agentId === agentId);
+}
+
+export function formatPrice(price: number, currency: string): string {
+  const symbols: Record<string, string> = { USD: '$', GBP: '£', EUR: '€', NGN: '₦' };
+  const sym = symbols[currency] || '$';
+  if (price >= 1_000_000) return `${sym}${(price / 1_000_000).toFixed(1)}M`;
+  if (price >= 1_000) return `${sym}${(price / 1_000).toFixed(0)}K`;
+  return `${sym}${price.toLocaleString()}`;
+}
+
+export function formatPriceFull(price: number, currency: string): string {
+  const symbols: Record<string, string> = { USD: '$', GBP: '£', EUR: '€', NGN: '₦' };
+  const sym = symbols[currency] || '$';
+  return `${sym}${price.toLocaleString()}`;
+}
