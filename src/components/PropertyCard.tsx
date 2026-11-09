@@ -1,7 +1,7 @@
 'use client';
 
-import { Property } from '@/lib/types';
-import { formatPrice } from '@/lib/data';
+import { Property } from '../lib/types';
+import { formatPrice } from '../lib/data';
 import Link from 'next/link';
 
 export default function PropertyCard({ property }: { property: Property }) {

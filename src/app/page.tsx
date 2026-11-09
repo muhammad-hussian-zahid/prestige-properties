@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { properties, agents, testimonials, formatPrice } from '@/lib/data';
-import PropertyCard from '@/components/PropertyCard';
-import AgentCard from '@/components/AgentCard';
+import { properties, agents, testimonials, formatPrice } from '../lib/data';
+import PropertyCard from '../components/PropertyCard';
+import AgentCard from '../components/AgentCard';
 
 const cities = [
   { name: 'Lagos', image: 'https://images.unsplash.com/photo-1595796790000-5b7e9c9c9c9c?w=600', count: 4 },

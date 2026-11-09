@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import AgentCard from '@/components/AgentCard';
-import { agents } from '@/lib/data';
+import AgentCard from '../../components/AgentCard';
+import { agents } from '../../lib/data';
 
 export default function AgentsPage() {
   const [search, setSearch] = useState('');

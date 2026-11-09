@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { getAgentBySlug, getPropertiesByAgentId, formatPrice } from '@/lib/data';
-import PropertyCard from '@/components/PropertyCard';
+import { getAgentBySlug, getPropertiesByAgentId, formatPrice } from '../../../lib/data';
+import PropertyCard from '../../../components/PropertyCard';
 
 export default function AgentDetailPage() {
   const params = useParams<{ slug: string }>();

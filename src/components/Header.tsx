@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useAppStore } from '@/lib/store';
+import { useAppStore } from '../lib/store';
 
 const links = [
   { href: '/', label: 'Home' },

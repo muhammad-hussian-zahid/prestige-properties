@@ -1,6 +1,6 @@
 'use client';
 
-import { Agent } from '@/lib/types';
+import { Agent } from '../lib/types';
 import Link from 'next/link';
 
 export default function AgentCard({ agent }: { agent: Agent }) {

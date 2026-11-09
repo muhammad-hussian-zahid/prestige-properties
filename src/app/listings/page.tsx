@@ -1,9 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { properties as allProperties, cities } from '@/lib/data';
-import PropertyCard from '@/components/PropertyCard';
-import { Property } from '@/lib/types';
+import { properties as allProperties, cities } from '../../lib/data';
+import PropertyCard from '../../components/PropertyCard';
+import { Property } from '../../lib/types';
 
 export default function ListingsPage() {
   const [filters, setFilters] = useState({ type: '', listingType: '', location: '', priceMin: '', priceMax: '', bedrooms: '', sort: 'newest' });

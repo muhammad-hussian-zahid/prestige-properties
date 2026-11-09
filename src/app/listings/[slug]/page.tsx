@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { getPropertyBySlug, getPropertiesByAgentId, properties } from '@/lib/data';
-import PropertyCard from '@/components/PropertyCard';
+import { getPropertyBySlug, getPropertiesByAgentId, properties } from '../../../lib/data';
+import PropertyCard from '../../../components/PropertyCard';
 
 // Simple agent slug lookup for the detail page
 function findAgentForProperty(propertySlug: string) {
