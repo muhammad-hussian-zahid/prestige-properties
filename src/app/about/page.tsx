@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { agents, properties } from '../lib/data';
+import { agents, properties } from '../../lib/data';
 
 export default function AboutPage() {
   const totalSold = properties.filter((p) => p.status === 'Sold').length;
