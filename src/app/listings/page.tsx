@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { properties as allProperties, cities } from '../../lib/data';
+import { properties as allProperties } from '../../lib/data';
 import PropertyCard from '../../components/PropertyCard';
 import { Property } from '../../lib/types';
 
@@ -58,8 +58,8 @@ export default function ListingsPage() {
             <option value="Shortlet">Shortlet</option>
           </select>
           <input value={filters.location} onChange={(e) => setFilters({ ...filters, location: e.target.value })} placeholder="Location" className="w-full px-3 py-2 rounded-lg border border-slate/20 text-sm" />
-          <input value={filters.priceMin} onChange={(e) => setFilters({ ...filters, priceMin: e.target.value })} placeholder="Min price" type="number" className="w-full px-3 py-2 rounded-lg border border-slate/20 text-sm" />
-          <input value={filters.priceMax} onChange={(e) => setFilters({ ...filters, priceMax: e.target.value })} placeholder="Max price" type="number" className="w-full px-3 py-2 rounded-lg border border-slate/20 text-sm" />
+          <input value={filters.priceMin} onChange={(e) => setFilters({ ...filters, priceMin: e.target.value })} placeholder="Min Price" className="w-full px-3 py-2 rounded-lg border border-slate/20 text-sm" />
+          <input value={filters.priceMax} onChange={(e) => setFilters({ ...filters, priceMax: e.target.value })} placeholder="Max Price" className="w-full px-3 py-2 rounded-lg border border-slate/20 text-sm" />
           <select value={filters.bedrooms} onChange={(e) => setFilters({ ...filters, bedrooms: e.target.value })} className="w-full px-3 py-2 rounded-lg border border-slate/20 text-sm">
             <option value="">Bedrooms</option>
             <option value="1">1+</option>
@@ -68,13 +68,13 @@ export default function ListingsPage() {
             <option value="4">4+</option>
             <option value="5">5+</option>
           </select>
-          <button onClick={clearFilters} className="bg-slate/10 text-slate px-4 py-2 rounded-lg text-sm hover:bg-slate/20 transition">Clear</button>
+          <button onClick={clearFilters} className="text-xs text-slate/60 underline hover:text-gold transition cursor-pointer">Clear</button>
         </div>
       </div>
 
-      {/* Sort + Count */}
-      <div className="flex items-center justify-between mb-6">
-        <p className="text-sm text-slate">{sorted.length} properties found</p>
+      {/* Sort */}
+      <div className="flex justify-between items-center mb-6">
+        <p className="text-sm text-slate">{filtered.length} properties found</p>
         <select value={filters.sort} onChange={(e) => setFilters({ ...filters, sort: e.target.value })} className="px-3 py-2 rounded-lg border border-slate/20 text-sm">
           <option value="newest">Newest First</option>
           <option value="price-asc">Price: Low to High</option>
